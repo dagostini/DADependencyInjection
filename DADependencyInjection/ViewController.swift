@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Intents
 
 private struct Constants {
     static let CellIdentifier = "ListItemCell"
@@ -26,6 +27,23 @@ class ViewController: UIViewController {
         self.tableView.refreshControl?.addTarget(self, action: #selector(ViewController.refreshControlAction), for: UIControlEvents.valueChanged)
         
         self.reloadData()
+        
+        self.requestSiriAuthorization()
+    }
+    
+    private func requestSiriAuthorization() {
+        INPreferences.requestSiriAuthorization { (status) in
+            switch status {
+            case .authorized:
+                print("authorized")
+            case .denied:
+                print("denied")
+            case .notDetermined:
+                print("notDetermined")
+            case .restricted:
+                print("restricted")
+            }
+        }
     }
     
     func refreshControlAction() {

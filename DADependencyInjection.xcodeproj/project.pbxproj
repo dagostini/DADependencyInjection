@@ -42,6 +42,39 @@
 		7757D29A1E5D126D00C23217 /* MoviesFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7757D2961E5D126D00C23217 /* MoviesFactory.swift */; };
 		7757D29B1E5D126D00C23217 /* MoviesFactoryProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7757D2971E5D126D00C23217 /* MoviesFactoryProvider.swift */; };
 		7757D29E1E5D1A0E00C23217 /* MoviesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7757D29D1E5D1A0E00C23217 /* MoviesManager.swift */; };
+		77A3A07B1ECD129A009363DC /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A3A07A1ECD129A009363DC /* IntentHandler.swift */; };
+		77A3A0901ECD129A009363DC /* SiriTest.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 77A3A0781ECD1299009363DC /* SiriTest.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		77A3A09E1ED0DACD009363DC /* ListDisplayableDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77121EB41E5E67C400F125DD /* ListDisplayableDataProvider.swift */; };
+		77A3A09F1ED0DAD2009363DC /* MoviesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7757D29D1E5D1A0E00C23217 /* MoviesManager.swift */; };
+		77A3A0A01ED0DAEB009363DC /* MoviesDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7757D2931E5D126D00C23217 /* MoviesDataProvider.swift */; };
+		77A3A0A11ED0DAED009363DC /* MoviesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7757D2941E5D126D00C23217 /* MoviesDataSource.swift */; };
+		77A3A0A21ED0DAF2009363DC /* MoviesFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7757D2961E5D126D00C23217 /* MoviesFactory.swift */; };
+		77A3A0A31ED0DAFA009363DC /* MoviesFactoryProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7757D2971E5D126D00C23217 /* MoviesFactoryProvider.swift */; };
+		77A3A0A41ED0DAFF009363DC /* MovieItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7757D28A1E5CF5CB00C23217 /* MovieItem.swift */; };
+		77A3A0A51ED0DAFF009363DC /* ListDisplayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77121EB21E5E5BFB00F125DD /* ListDisplayable.swift */; };
+		77A3A0A61ED0DB8F009363DC /* AFNetworkConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7757D2811E5BB33000C23217 /* AFNetworkConnector.swift */; };
+		77A3A0A71ED0DB8F009363DC /* NetworkingProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7757D2831E5CEB1100C23217 /* NetworkingProvider.swift */; };
+		77A3A0A81ED0DB8F009363DC /* NSURLNetworkConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77121EB61E5E741900F125DD /* NSURLNetworkConnector.swift */; };
+		77A3A0A91ED0DBC4009363DC /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7757D25B1E5BB0B800C23217 /* AFError.swift */; };
+		77A3A0AA1ED0DBC4009363DC /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7757D25D1E5BB0B800C23217 /* Alamofire.swift */; };
+		77A3A0AB1ED0DBC4009363DC /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7757D25E1E5BB0B800C23217 /* DispatchQueue+Alamofire.swift */; };
+		77A3A0AC1ED0DBC4009363DC /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7757D25F1E5BB0B800C23217 /* MultipartFormData.swift */; };
+		77A3A0AD1ED0DBC4009363DC /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7757D2601E5BB0B800C23217 /* NetworkReachabilityManager.swift */; };
+		77A3A0AE1ED0DBC4009363DC /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7757D2611E5BB0B800C23217 /* Notifications.swift */; };
+		77A3A0AF1ED0DBC4009363DC /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7757D2621E5BB0B800C23217 /* ParameterEncoding.swift */; };
+		77A3A0B01ED0DBC4009363DC /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7757D2631E5BB0B800C23217 /* Request.swift */; };
+		77A3A0B11ED0DBC4009363DC /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7757D2641E5BB0B800C23217 /* Response.swift */; };
+		77A3A0B21ED0DBC4009363DC /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7757D2651E5BB0B800C23217 /* ResponseSerialization.swift */; };
+		77A3A0B31ED0DBC4009363DC /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7757D2661E5BB0B800C23217 /* Result.swift */; };
+		77A3A0B41ED0DBC4009363DC /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7757D2671E5BB0B800C23217 /* ServerTrustPolicy.swift */; };
+		77A3A0B51ED0DBC4009363DC /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7757D2681E5BB0B800C23217 /* SessionDelegate.swift */; };
+		77A3A0B61ED0DBC4009363DC /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7757D2691E5BB0B800C23217 /* SessionManager.swift */; };
+		77A3A0B71ED0DBC4009363DC /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7757D26A1E5BB0B800C23217 /* TaskDelegate.swift */; };
+		77A3A0B81ED0DBC4009363DC /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7757D26B1E5BB0B800C23217 /* Timeline.swift */; };
+		77A3A0B91ED0DBC4009363DC /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7757D26C1E5BB0B800C23217 /* Validation.swift */; };
+		77A3A0BB1ED1047D009363DC /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A3A0BA1ED1047D009363DC /* DetailsViewController.swift */; };
+		77A3A0BD1ED108B2009363DC /* SiriConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A3A0BC1ED108B2009363DC /* SiriConstants.swift */; };
+		77A3A0BE1ED10901009363DC /* SiriConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A3A0BC1ED108B2009363DC /* SiriConstants.swift */; };
 		77E0CF1C1EA7E38F00CA4B25 /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E0CF1B1EA7E38F00CA4B25 /* TestData.swift */; };
 		77E0CF1F1EA7E77900CA4B25 /* MockNetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E0CF1E1EA7E77900CA4B25 /* MockNetworkProvider.swift */; };
 		77E0CF211EA7E7C600CA4B25 /* MoviesFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E0CF201EA7E7C600CA4B25 /* MoviesFactoryTests.swift */; };
@@ -57,7 +90,28 @@
 			remoteGlobalIDString = 7757D2341E5A627400C23217;
 			remoteInfo = DADependencyInjection;
 		};
+		77A3A08E1ECD129A009363DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7757D22D1E5A627400C23217 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 77A3A0771ECD1299009363DC;
+			remoteInfo = SiriTest;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		77A3A0971ECD129A009363DC /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				77A3A0901ECD129A009363DC /* SiriTest.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3238EB424053DC01A384024E /* Pods_DADependencyInjection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DADependencyInjection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,6 +155,13 @@
 		7757D2961E5D126D00C23217 /* MoviesFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesFactory.swift; sourceTree = "<group>"; };
 		7757D2971E5D126D00C23217 /* MoviesFactoryProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesFactoryProvider.swift; sourceTree = "<group>"; };
 		7757D29D1E5D1A0E00C23217 /* MoviesManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesManager.swift; sourceTree = "<group>"; };
+		77A3A0781ECD1299009363DC /* SiriTest.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SiriTest.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		77A3A07A1ECD129A009363DC /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		77A3A07C1ECD129A009363DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77A3A0821ECD129A009363DC /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		77A3A0981ECD14A4009363DC /* DADependencyInjection.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DADependencyInjection.entitlements; sourceTree = "<group>"; };
+		77A3A0BA1ED1047D009363DC /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		77A3A0BC1ED108B2009363DC /* SiriConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SiriConstants.swift; sourceTree = "<group>"; };
 		77E0CF1B1EA7E38F00CA4B25 /* TestData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
 		77E0CF1E1EA7E77900CA4B25 /* MockNetworkProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockNetworkProvider.swift; sourceTree = "<group>"; };
 		77E0CF201EA7E7C600CA4B25 /* MoviesFactoryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesFactoryTests.swift; sourceTree = "<group>"; };
@@ -119,6 +180,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		7757D2461E5A627400C23217 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77A3A0751ECD1299009363DC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -152,6 +220,7 @@
 			children = (
 				7757D2371E5A627400C23217 /* DADependencyInjection */,
 				7757D24C1E5A627400C23217 /* DADependencyInjectionTests */,
+				77A3A0791ECD129A009363DC /* SiriTest */,
 				7757D2361E5A627400C23217 /* Products */,
 				6F3CDBCA4B83DF34C0FDD6AE /* Pods */,
 				F6FEC9CFBE08A01C4BECBBCA /* Frameworks */,
@@ -163,6 +232,7 @@
 			children = (
 				7757D2351E5A627400C23217 /* DADependencyInjection.app */,
 				7757D2491E5A627400C23217 /* DADependencyInjectionTests.xctest */,
+				77A3A0781ECD1299009363DC /* SiriTest.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -170,14 +240,17 @@
 		7757D2371E5A627400C23217 /* DADependencyInjection */ = {
 			isa = PBXGroup;
 			children = (
+				77A3A0981ECD14A4009363DC /* DADependencyInjection.entitlements */,
 				7757D2591E5BB0B800C23217 /* Libraries */,
 				7757D2581E5A755600C23217 /* Core */,
 				7757D2381E5A627400C23217 /* AppDelegate.swift */,
 				7757D23A1E5A627400C23217 /* ViewController.swift */,
+				77A3A0BA1ED1047D009363DC /* DetailsViewController.swift */,
 				7757D23C1E5A627400C23217 /* Main.storyboard */,
 				7757D23F1E5A627400C23217 /* Assets.xcassets */,
 				7757D2411E5A627400C23217 /* LaunchScreen.storyboard */,
 				7757D2441E5A627400C23217 /* Info.plist */,
+				77A3A0BC1ED108B2009363DC /* SiriConstants.swift */,
 			);
 			path = DADependencyInjection;
 			sourceTree = "<group>";
@@ -286,6 +359,15 @@
 			path = Manager;
 			sourceTree = "<group>";
 		};
+		77A3A0791ECD129A009363DC /* SiriTest */ = {
+			isa = PBXGroup;
+			children = (
+				77A3A07A1ECD129A009363DC /* IntentHandler.swift */,
+				77A3A07C1ECD129A009363DC /* Info.plist */,
+			);
+			path = SiriTest;
+			sourceTree = "<group>";
+		};
 		77E0CF1D1EA7E77900CA4B25 /* MockObjects */ = {
 			isa = PBXGroup;
 			children = (
@@ -298,6 +380,7 @@
 			isa = PBXGroup;
 			children = (
 				3238EB424053DC01A384024E /* Pods_DADependencyInjection.framework */,
+				77A3A0821ECD129A009363DC /* IntentsUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -312,10 +395,12 @@
 				7757D2311E5A627400C23217 /* Sources */,
 				7757D2321E5A627400C23217 /* Frameworks */,
 				7757D2331E5A627400C23217 /* Resources */,
+				77A3A0971ECD129A009363DC /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				77A3A08F1ECD129A009363DC /* PBXTargetDependency */,
 			);
 			name = DADependencyInjection;
 			productName = DADependencyInjection;
@@ -340,13 +425,30 @@
 			productReference = 7757D2491E5A627400C23217 /* DADependencyInjectionTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		77A3A0771ECD1299009363DC /* SiriTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77A3A0961ECD129A009363DC /* Build configuration list for PBXNativeTarget "SiriTest" */;
+			buildPhases = (
+				77A3A0741ECD1299009363DC /* Sources */,
+				77A3A0751ECD1299009363DC /* Frameworks */,
+				77A3A0761ECD1299009363DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SiriTest;
+			productName = SiriTest;
+			productReference = 77A3A0781ECD1299009363DC /* SiriTest.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		7757D22D1E5A627400C23217 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0820;
+				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = Dejan;
 				TargetAttributes = {
@@ -354,12 +456,22 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = V7FR7N29C2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Siri = {
+								enabled = 1;
+							};
+						};
 					};
 					7757D2481E5A627400C23217 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = V7FR7N29C2;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 7757D2341E5A627400C23217;
+					};
+					77A3A0771ECD1299009363DC = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = V7FR7N29C2;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -378,6 +490,7 @@
 			targets = (
 				7757D2341E5A627400C23217 /* DADependencyInjection */,
 				7757D2481E5A627400C23217 /* DADependencyInjectionTests */,
+				77A3A0771ECD1299009363DC /* SiriTest */,
 			);
 		};
 /* End PBXProject section */
@@ -401,6 +514,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		77A3A0761ECD1299009363DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -410,6 +530,7 @@
 			files = (
 				7757D29A1E5D126D00C23217 /* MoviesFactory.swift in Sources */,
 				7757D27C1E5BB0B800C23217 /* Timeline.swift in Sources */,
+				77A3A0BD1ED108B2009363DC /* SiriConstants.swift in Sources */,
 				7757D2731E5BB0B800C23217 /* ParameterEncoding.swift in Sources */,
 				7757D2771E5BB0B800C23217 /* Result.swift in Sources */,
 				7757D2721E5BB0B800C23217 /* Notifications.swift in Sources */,
@@ -430,6 +551,7 @@
 				77121EB71E5E741900F125DD /* NSURLNetworkConnector.swift in Sources */,
 				7757D27D1E5BB0B800C23217 /* Validation.swift in Sources */,
 				7757D2741E5BB0B800C23217 /* Request.swift in Sources */,
+				77A3A0BB1ED1047D009363DC /* DetailsViewController.swift in Sources */,
 				7757D27B1E5BB0B800C23217 /* TaskDelegate.swift in Sources */,
 				7757D26E1E5BB0B800C23217 /* Alamofire.swift in Sources */,
 				7757D29E1E5D1A0E00C23217 /* MoviesManager.swift in Sources */,
@@ -454,6 +576,43 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		77A3A0741ECD1299009363DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77A3A0BE1ED10901009363DC /* SiriConstants.swift in Sources */,
+				77A3A0A11ED0DAED009363DC /* MoviesDataSource.swift in Sources */,
+				77A3A0AD1ED0DBC4009363DC /* NetworkReachabilityManager.swift in Sources */,
+				77A3A0A61ED0DB8F009363DC /* AFNetworkConnector.swift in Sources */,
+				77A3A0B41ED0DBC4009363DC /* ServerTrustPolicy.swift in Sources */,
+				77A3A0AC1ED0DBC4009363DC /* MultipartFormData.swift in Sources */,
+				77A3A0A41ED0DAFF009363DC /* MovieItem.swift in Sources */,
+				77A3A0A31ED0DAFA009363DC /* MoviesFactoryProvider.swift in Sources */,
+				77A3A0A71ED0DB8F009363DC /* NetworkingProvider.swift in Sources */,
+				77A3A0B81ED0DBC4009363DC /* Timeline.swift in Sources */,
+				77A3A07B1ECD129A009363DC /* IntentHandler.swift in Sources */,
+				77A3A0AA1ED0DBC4009363DC /* Alamofire.swift in Sources */,
+				77A3A09F1ED0DAD2009363DC /* MoviesManager.swift in Sources */,
+				77A3A0A91ED0DBC4009363DC /* AFError.swift in Sources */,
+				77A3A0B61ED0DBC4009363DC /* SessionManager.swift in Sources */,
+				77A3A0B91ED0DBC4009363DC /* Validation.swift in Sources */,
+				77A3A0B71ED0DBC4009363DC /* TaskDelegate.swift in Sources */,
+				77A3A0A81ED0DB8F009363DC /* NSURLNetworkConnector.swift in Sources */,
+				77A3A0AE1ED0DBC4009363DC /* Notifications.swift in Sources */,
+				77A3A0B31ED0DBC4009363DC /* Result.swift in Sources */,
+				77A3A0B11ED0DBC4009363DC /* Response.swift in Sources */,
+				77A3A0B51ED0DBC4009363DC /* SessionDelegate.swift in Sources */,
+				77A3A09E1ED0DACD009363DC /* ListDisplayableDataProvider.swift in Sources */,
+				77A3A0AF1ED0DBC4009363DC /* ParameterEncoding.swift in Sources */,
+				77A3A0A01ED0DAEB009363DC /* MoviesDataProvider.swift in Sources */,
+				77A3A0AB1ED0DBC4009363DC /* DispatchQueue+Alamofire.swift in Sources */,
+				77A3A0B01ED0DBC4009363DC /* Request.swift in Sources */,
+				77A3A0B21ED0DBC4009363DC /* ResponseSerialization.swift in Sources */,
+				77A3A0A21ED0DAF2009363DC /* MoviesFactory.swift in Sources */,
+				77A3A0A51ED0DAFF009363DC /* ListDisplayable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -461,6 +620,11 @@
 			isa = PBXTargetDependency;
 			target = 7757D2341E5A627400C23217 /* DADependencyInjection */;
 			targetProxy = 7757D24A1E5A627400C23217 /* PBXContainerItemProxy */;
+		};
+		77A3A08F1ECD129A009363DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 77A3A0771ECD1299009363DC /* SiriTest */;
+			targetProxy = 77A3A08E1ECD129A009363DC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -581,7 +745,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D416D0947A4A9B47D6930D8D /* Pods-DADependencyInjection.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DADependencyInjection/DADependencyInjection.entitlements;
 				DEVELOPMENT_TEAM = V7FR7N29C2;
 				INFOPLIST_FILE = DADependencyInjection/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -595,7 +761,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9D2D2E774E3032D8BA0268DA /* Pods-DADependencyInjection.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DADependencyInjection/DADependencyInjection.entitlements;
 				DEVELOPMENT_TEAM = V7FR7N29C2;
 				INFOPLIST_FILE = DADependencyInjection/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -635,6 +803,36 @@
 			};
 			name = Release;
 		};
+		77A3A0911ECD129A009363DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				DEVELOPMENT_TEAM = V7FR7N29C2;
+				INFOPLIST_FILE = SiriTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = agostini.tech.DADependencyInjection.SiriTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		77A3A0921ECD129A009363DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				DEVELOPMENT_TEAM = V7FR7N29C2;
+				INFOPLIST_FILE = SiriTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = agostini.tech.DADependencyInjection.SiriTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -664,6 +862,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		77A3A0961ECD129A009363DC /* Build configuration list for PBXNativeTarget "SiriTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77A3A0911ECD129A009363DC /* Debug */,
+				77A3A0921ECD129A009363DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

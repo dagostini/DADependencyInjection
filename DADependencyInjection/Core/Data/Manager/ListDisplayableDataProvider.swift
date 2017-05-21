@@ -10,4 +10,5 @@ import Foundation
 
 protocol ListDisplayableDataProvider {
     func getListItems(onCompleted: (([ListDisplayable]) -> ())?)
+    func searchListItems(searchTerm: String, onCompleted: (([ListDisplayable]) -> ())?)
 }

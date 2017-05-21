@@ -10,6 +10,8 @@ import Foundation
 
 class MoviesManager: ListDisplayableDataProvider {
     
+    private var cachedItems: [ListDisplayable]?
+    
     var moviesDataProvider: MoviesDataProvider
     
     init(withDataProvider dataProvider: MoviesDataProvider = MoviesDataSource()) {
@@ -26,7 +28,24 @@ class MoviesManager: ListDisplayableDataProvider {
             DispatchQueue.main.async(execute: { 
                 onCompleted?(listItems)
             })
+            
+            self.cachedItems = listItems
         }
+    }
+    
+    func searchListItems(searchTerm: String, onCompleted: (([ListDisplayable]) -> ())?) {
+        
+        if let cached = cachedItems {
+            onCompleted?(self.filter(cached, term: searchTerm))
+        } else {
+            getListItems(onCompleted: { (items) in
+                onCompleted?(self.filter(items, term: searchTerm))
+            })
+        }
+    }
+    
+    private func filter(_ list: [ListDisplayable], term: String) -> [ListDisplayable] {
+        return list.filter(){ $0.listItemTitle.lowercased().contains(term.lowercased()) }
     }
 }
 
