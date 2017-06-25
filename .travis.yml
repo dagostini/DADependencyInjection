@@ -1,3 +1,4 @@
 language: swift
-script:
-    - xctool test -project DADependencyInjection.xcodeproj -scheme DADependencyInjection -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+osx_image: xcode8.3
+xcode_project: DADependencyInjection.xcodeproj
+xcode_scheme: DADependencyInjectionTests
