@@ -1,4 +1,4 @@
 language: swift
 osx_image: xcode8.3
 script:
-    - xctool test -project DADependencyInjection.xcodeproj -scheme DADependencyInjection
+    - xcodebuild test -project DADependencyInjection.xcodeproj -scheme DADependencyInjection
