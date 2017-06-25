@@ -1,1 +1,0 @@
-xcodebuild -project DADependencyInjection.xcodeproj -scheme DADependencyInjection -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 7,OS=10.3.1' test
