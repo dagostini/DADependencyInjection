@@ -1,0 +1,4 @@
+ignore:
+    - "DADependencyInjection/AppDelegate.swift"
+    - "DADependencyInjection/Libraries/.*"
+    - "**/*ViewController.swift"
