@@ -75,6 +75,10 @@
 		77A3A0BB1ED1047D009363DC /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A3A0BA1ED1047D009363DC /* DetailsViewController.swift */; };
 		77A3A0BD1ED108B2009363DC /* SiriConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A3A0BC1ED108B2009363DC /* SiriConstants.swift */; };
 		77A3A0BE1ED10901009363DC /* SiriConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A3A0BC1ED108B2009363DC /* SiriConstants.swift */; };
+		77DBD5601F2B859100B2441F /* GetDataOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77DBD55F1F2B859100B2441F /* GetDataOperation.swift */; };
+		77DBD5621F2B85C200B2441F /* DAOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77DBD5611F2B85C200B2441F /* DAOperation.swift */; };
+		77DBD5641F2B8DFF00B2441F /* ParseDataOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77DBD5631F2B8DFF00B2441F /* ParseDataOperation.swift */; };
+		77DBD5661F2BE47300B2441F /* MoviesDataSource_Operations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77DBD5651F2BE47300B2441F /* MoviesDataSource_Operations.swift */; };
 		77E0CF1C1EA7E38F00CA4B25 /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E0CF1B1EA7E38F00CA4B25 /* TestData.swift */; };
 		77E0CF1F1EA7E77900CA4B25 /* MockNetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E0CF1E1EA7E77900CA4B25 /* MockNetworkProvider.swift */; };
 		77E0CF211EA7E7C600CA4B25 /* MoviesFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E0CF201EA7E7C600CA4B25 /* MoviesFactoryTests.swift */; };
@@ -162,6 +166,10 @@
 		77A3A0981ECD14A4009363DC /* DADependencyInjection.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DADependencyInjection.entitlements; sourceTree = "<group>"; };
 		77A3A0BA1ED1047D009363DC /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		77A3A0BC1ED108B2009363DC /* SiriConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SiriConstants.swift; sourceTree = "<group>"; };
+		77DBD55F1F2B859100B2441F /* GetDataOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetDataOperation.swift; sourceTree = "<group>"; };
+		77DBD5611F2B85C200B2441F /* DAOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DAOperation.swift; sourceTree = "<group>"; };
+		77DBD5631F2B8DFF00B2441F /* ParseDataOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseDataOperation.swift; sourceTree = "<group>"; };
+		77DBD5651F2BE47300B2441F /* MoviesDataSource_Operations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesDataSource_Operations.swift; sourceTree = "<group>"; };
 		77E0CF1B1EA7E38F00CA4B25 /* TestData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
 		77E0CF1E1EA7E77900CA4B25 /* MockNetworkProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockNetworkProvider.swift; sourceTree = "<group>"; };
 		77E0CF201EA7E7C600CA4B25 /* MoviesFactoryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesFactoryTests.swift; sourceTree = "<group>"; };
@@ -271,6 +279,7 @@
 		7757D2581E5A755600C23217 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				77DBD55E1F2B856D00B2441F /* Operations */,
 				7757D2851E5CEBCE00C23217 /* Data */,
 				7757D2801E5BB28500C23217 /* Networking */,
 			);
@@ -337,6 +346,7 @@
 			children = (
 				7757D2931E5D126D00C23217 /* MoviesDataProvider.swift */,
 				7757D2941E5D126D00C23217 /* MoviesDataSource.swift */,
+				77DBD5651F2BE47300B2441F /* MoviesDataSource_Operations.swift */,
 			);
 			path = DataProvider;
 			sourceTree = "<group>";
@@ -366,6 +376,16 @@
 				77A3A07C1ECD129A009363DC /* Info.plist */,
 			);
 			path = SiriTest;
+			sourceTree = "<group>";
+		};
+		77DBD55E1F2B856D00B2441F /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				77DBD55F1F2B859100B2441F /* GetDataOperation.swift */,
+				77DBD5611F2B85C200B2441F /* DAOperation.swift */,
+				77DBD5631F2B8DFF00B2441F /* ParseDataOperation.swift */,
+			);
+			path = Operations;
 			sourceTree = "<group>";
 		};
 		77E0CF1D1EA7E77900CA4B25 /* MockObjects */ = {
@@ -531,6 +551,7 @@
 				7757D29A1E5D126D00C23217 /* MoviesFactory.swift in Sources */,
 				7757D27C1E5BB0B800C23217 /* Timeline.swift in Sources */,
 				77A3A0BD1ED108B2009363DC /* SiriConstants.swift in Sources */,
+				77DBD5661F2BE47300B2441F /* MoviesDataSource_Operations.swift in Sources */,
 				7757D2731E5BB0B800C23217 /* ParameterEncoding.swift in Sources */,
 				7757D2771E5BB0B800C23217 /* Result.swift in Sources */,
 				7757D2721E5BB0B800C23217 /* Notifications.swift in Sources */,
@@ -539,8 +560,10 @@
 				7757D2701E5BB0B800C23217 /* MultipartFormData.swift in Sources */,
 				7757D2781E5BB0B800C23217 /* ServerTrustPolicy.swift in Sources */,
 				7757D2991E5D126D00C23217 /* MoviesDataSource.swift in Sources */,
+				77DBD5621F2B85C200B2441F /* DAOperation.swift in Sources */,
 				7757D2791E5BB0B800C23217 /* SessionDelegate.swift in Sources */,
 				7757D2821E5BB33000C23217 /* AFNetworkConnector.swift in Sources */,
+				77DBD5641F2B8DFF00B2441F /* ParseDataOperation.swift in Sources */,
 				7757D28B1E5CF5CB00C23217 /* MovieItem.swift in Sources */,
 				7757D23B1E5A627400C23217 /* ViewController.swift in Sources */,
 				7757D29B1E5D126D00C23217 /* MoviesFactoryProvider.swift in Sources */,
@@ -559,6 +582,7 @@
 				7757D2981E5D126D00C23217 /* MoviesDataProvider.swift in Sources */,
 				7757D26D1E5BB0B800C23217 /* AFError.swift in Sources */,
 				7757D2841E5CEB1100C23217 /* NetworkingProvider.swift in Sources */,
+				77DBD5601F2B859100B2441F /* GetDataOperation.swift in Sources */,
 				77121EB51E5E67C400F125DD /* ListDisplayableDataProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -870,6 +894,7 @@
 				77A3A0921ECD129A009363DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

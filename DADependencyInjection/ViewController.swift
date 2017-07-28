@@ -58,6 +58,11 @@ class ViewController: UIViewController {
             self.tableView.reloadData()
         }
     }
+    
+    @IBAction private func clearAllData() {
+        self.items = nil
+        self.tableView.reloadData()
+    }
 }
 
 extension ViewController: UITableViewDataSource {
@@ -89,9 +94,13 @@ extension ViewController {
         }
         
         if sender.selectedSegmentIndex == 0 {
+            moviesManager.moviesDataProvider = MoviesDataSource()
             moviesManager.moviesDataProvider.networkingProvider = AFNetworkConnector()
         } else if sender.selectedSegmentIndex == 1 {
+            moviesManager.moviesDataProvider = MoviesDataSource()
             moviesManager.moviesDataProvider.networkingProvider = NSURLNetworkConnector()
+        } else if sender.selectedSegmentIndex == 2 {
+            moviesManager.moviesDataProvider = MoviesDataSource_Operations()
         }
     }
 }
