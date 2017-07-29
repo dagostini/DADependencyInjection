@@ -13,13 +13,11 @@ class MoviesDataSource_Operations: MoviesDataProvider {
     public var networkingProvider: NetworkingProvider
     public var moviesFactory: MoviesFactoryProvider
     
-    private let operationQueue: OperationQueue
+    private let operationQueue: OperationQueue = OperationQueue()
     
     public init(withNetworkingProvider networking: NetworkingProvider = AFNetworkConnector(), andFactory factory: MoviesFactoryProvider = MoviesFactory()) {
         self.networkingProvider = networking
         self.moviesFactory = factory
-        
-        self.operationQueue = OperationQueue()
     }
     
     func getMovies(onCompleted: (([MovieItem]) -> ())?) {
@@ -43,6 +41,6 @@ class MoviesDataSource_Operations: MoviesDataProvider {
         }
         parsingOperation.addDependency(networkingOperation)
         
-        operationQueue.addOperations([networkingOperation, parsingOperation], waitUntilFinished: false)
+        operationQueue.addOperations([parsingOperation, networkingOperation], waitUntilFinished: false)
     }
 }
