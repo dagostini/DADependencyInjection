@@ -18,29 +18,55 @@ class MoviesDataSource_Operations: MoviesDataProvider {
     public init(withNetworkingProvider networking: NetworkingProvider = AFNetworkConnector(), andFactory factory: MoviesFactoryProvider = MoviesFactory()) {
         self.networkingProvider = networking
         self.moviesFactory = factory
+        self.operationQueue.maxConcurrentOperationCount = 5
     }
     
     func getMovies(onCompleted: (([MovieItem]) -> ())?) {
         
-        guard
-            let urlString = DataSourceConstants.URLString()
-            else {
-                onCompleted?([])
-                return
+        operationQueue.cancelAllOperations()
+        
+        var result: [MovieItem] = []
+        
+        let queueCompletionOperation = BlockOperation {
+            onCompleted?(result)
         }
         
-        let networkingOperation = GetDataOperation(withURLString: urlString, andNetworkingProvider: networkingProvider)
-        let parsingOperation = ParseDataOperation(withFactory: moviesFactory)
+        var operations: [Operation] = []
         
-        networkingOperation.completionBlock = {
-            parsingOperation.moviesData = networkingOperation.responseData
+        operationQueue.isSuspended = true
+        
+        for i in 1...5 {
+            guard
+                let urlString = DataSourceConstants.URLString(forPage: "\(i)")
+                else {
+                    continue
+            }
+            
+            let networkingOperation = GetDataOperation(withURLString: urlString, andNetworkingProvider: networkingProvider)
+            let parsingOperation = ParseDataOperation(withFactory: moviesFactory)
+            
+            networkingOperation.completionBlock = {
+                parsingOperation.moviesData = networkingOperation.responseData
+            }
+            
+            parsingOperation.completionBlock = {
+                if let moviesArray = parsingOperation.movies {
+                    DispatchQueue.global().sync(flags: .barrier) {
+                        result = result + moviesArray
+                    }
+                }
+            }
+            
+            parsingOperation.addDependency(networkingOperation)
+            
+            queueCompletionOperation.addDependency(parsingOperation)
+            
+            operations.append(contentsOf: [parsingOperation, networkingOperation])
         }
         
-        parsingOperation.completionBlock = {
-            onCompleted?(parsingOperation.movies ?? [])
-        }
-        parsingOperation.addDependency(networkingOperation)
+        operations.append(queueCompletionOperation)
         
-        operationQueue.addOperations([parsingOperation, networkingOperation], waitUntilFinished: false)
+        operationQueue.addOperations(operations, waitUntilFinished: false)
+        operationQueue.isSuspended = false
     }
 }
