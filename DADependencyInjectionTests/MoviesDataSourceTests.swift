@@ -29,7 +29,7 @@ class MoviesDataSourceTests: XCTestCase {
             }
             
             XCTAssertNotNil(movies)
-            XCTAssertTrue(movies?.count == 20)
+            XCTAssertTrue(movies?.count == 100) // Operations demo
             
             let firstMovie = movies?.sorted(){ $0.title > $1.title }.first
             XCTAssertEqual(firstMovie?.title, "The Fate of the Furious")

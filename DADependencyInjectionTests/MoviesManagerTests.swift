@@ -35,7 +35,7 @@ class MoviesManagerTests: XCTestCase {
             
             XCTAssertNotNil(result)
             
-            XCTAssertTrue(result?.count == 20)
+            XCTAssertTrue(result?.count == 100) // Operations demo
             
             let firstItem = result?.sorted(){ $0.listItemTitle > $1.listItemTitle }.first
             XCTAssertEqual(firstItem?.listItemTitle, "The Fate of the Furious")
@@ -61,7 +61,7 @@ class MoviesManagerTests: XCTestCase {
             
             XCTAssertNotNil(result)
             
-            XCTAssertTrue(result?.count == 1)
+            XCTAssertTrue(result?.count == 5) // Operations demo
             
             let item = result?.first
             XCTAssertEqual(item?.listItemTitle, "Ghost in the Shell")
@@ -100,7 +100,7 @@ class MoviesManagerTests: XCTestCase {
             
             XCTAssertNotNil(result)
             
-            XCTAssertTrue(result?.count == 1)
+            XCTAssertTrue(result?.count == 5) // Operations demo
             
             let item = result?.first
             XCTAssertEqual(item?.listItemTitle, "Ghost in the Shell")
