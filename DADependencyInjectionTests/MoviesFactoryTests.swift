@@ -19,7 +19,7 @@ class MoviesFactoryTests: XCTestCase {
             return
         }
         
-        let moviesFactory = MoviesFactory()
+        let moviesFactory = JSONMoviesFactory()
         let movies = moviesFactory.movieItems(withJSON: testJSON)
         
         XCTAssertTrue(movies.count == 20)

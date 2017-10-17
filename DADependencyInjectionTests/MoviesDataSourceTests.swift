@@ -14,7 +14,7 @@ class MoviesDataSourceTests: XCTestCase {
     func testGetMovies_Normal_ListOfMovies() {
         let testDataProvider = TestData(withFileName: TestFileNames.PopularMovies)
         let networkingProvider = MockNetworkProvider(withDataProvider: testDataProvider)
-        let dataSource = MoviesDataSource(withNetworkingProvider: networkingProvider, andFactory: MoviesFactory())
+        let dataSource = MoviesDataSource(withNetworkingProvider: networkingProvider, andFactory: JSONMoviesFactory())
         var movies: [MovieItem]?
         
         let getMoviesExpectation = self.expectation(description: "Get Movies Expectation")

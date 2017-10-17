@@ -13,7 +13,7 @@ class MoviesManagerTests: XCTestCase {
     
     private func createManager() -> MoviesManager {
         let networkProvider = MockNetworkProvider(withDataProvider: TestData(withFileName: TestFileNames.PopularMovies))
-        let dataProvider = MoviesDataSource(withNetworkingProvider: networkProvider, andFactory: MoviesFactory())
+        let dataProvider = MoviesDataSource(withNetworkingProvider: networkProvider, andFactory: JSONMoviesFactory())
         return MoviesManager(withDataProvider: dataProvider)
     }
     
