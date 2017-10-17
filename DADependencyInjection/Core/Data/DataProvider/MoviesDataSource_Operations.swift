@@ -15,7 +15,7 @@ class MoviesDataSource_Operations: MoviesDataProvider {
     
     private let operationQueue: OperationQueue = OperationQueue()
     
-    public init(withNetworkingProvider networking: NetworkingProvider = AFNetworkConnector(), andFactory factory: MoviesFactoryProvider = MoviesFactory()) {
+    public init(withNetworkingProvider networking: NetworkingProvider = AFNetworkConnector(), andFactory factory: MoviesFactoryProvider = JSONMoviesFactory()) {
         self.networkingProvider = networking
         self.moviesFactory = factory
         self.operationQueue.maxConcurrentOperationCount = 5

@@ -9,6 +9,5 @@
 import Foundation
 
 protocol MoviesFactoryProvider {
-    func movieItem(withJSON json: Any) -> MovieItem?
     func movieItems(withJSON json: Any) -> [MovieItem]
 }

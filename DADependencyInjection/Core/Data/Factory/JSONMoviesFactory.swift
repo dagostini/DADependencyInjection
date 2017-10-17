@@ -16,9 +16,9 @@ private struct MovieItemKey {
     static let AverageVote = "vote_average"
 }
 
-class MoviesFactory: MoviesFactoryProvider {
+class JSONMoviesFactory: MoviesFactoryProvider {
     
-    func movieItem(withJSON json: Any) -> MovieItem? {
+    private func movieItem(withJSON json: Any) -> MovieItem? {
         
         guard
             let jsonDict = json as? [String: Any?],

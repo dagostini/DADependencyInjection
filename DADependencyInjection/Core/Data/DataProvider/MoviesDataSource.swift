@@ -6,7 +6,7 @@
 //  Copyright © 2017 Dejan. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 struct DataSourceConstants {
     static let TMDBBaseURL = "https://api.themoviedb.org"
@@ -34,7 +34,7 @@ class MoviesDataSource: MoviesDataProvider {
     public var networkingProvider: NetworkingProvider
     public var moviesFactory: MoviesFactoryProvider
     
-    public init(withNetworkingProvider networking: NetworkingProvider = AFNetworkConnector(), andFactory factory: MoviesFactoryProvider = MoviesFactory()) {
+    public init(withNetworkingProvider networking: NetworkingProvider = AFNetworkConnector(), andFactory factory: MoviesFactoryProvider = JSONMoviesFactory()) {
         self.networkingProvider = networking
         self.moviesFactory = factory
     }

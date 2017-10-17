@@ -15,7 +15,7 @@ class ParseDataOperation: DAOperation {
     var moviesData: Data?
     var movies: [MovieItem]?
     
-    init(withFactory factory: MoviesFactoryProvider = MoviesFactory()) {
+    init(withFactory factory: MoviesFactoryProvider = JSONMoviesFactory()) {
         self.factory = factory
     }
     
