@@ -1,0 +1,18 @@
+framework module Bugsee {
+    umbrella header "Bugsee.h"
+
+    export *
+    module * { export * }
+
+    link framework "SystemConfiguration"
+    link framework "CoreMotion"
+    link framework "CoreMedia"
+    link framework "Foundation"
+    link framework "CoreFoundation"
+    link framework "AVFoundation"
+    link framework "CoreTelephony"
+    link framework "QuartzCore"
+    link framework "CoreGraphics"
+
+    link "c++"
+}

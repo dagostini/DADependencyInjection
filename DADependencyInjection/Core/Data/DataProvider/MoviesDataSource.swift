@@ -12,7 +12,7 @@ struct DataSourceConstants {
     static let TMDBBaseURL = "https://api.themoviedb.org"
     static let MoviesURL = "/3/movie/popular"
     static let APIParameterKey = "api_key"
-    static let APIParameterValue = "_YOUR_API_KEY_HERE_"
+    static let APIParameterValue = APIKey.TheMovieDB
     static let PageParameterKey = "page"
     
     static func URLString(forPage page: String = "1") -> String? {

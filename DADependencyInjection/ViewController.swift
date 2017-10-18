@@ -8,6 +8,7 @@
 
 import UIKit
 import Intents
+import Bugsee
 
 private struct Constants {
     static let CellIdentifier = "ListItemCell"
@@ -59,6 +60,10 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBAction func showFeedbackController(_ sender: Any) {
+        Bugsee.showFeedbackController()
+    }
+    
     @IBAction private func clearAllData() {
         self.items = nil
         self.tableView.reloadData()
@@ -100,7 +105,9 @@ extension ViewController {
             moviesManager.moviesDataProvider = MoviesDataSource()
             moviesManager.moviesDataProvider.networkingProvider = NSURLNetworkConnector()
         } else if sender.selectedSegmentIndex == 2 {
-            moviesManager.moviesDataProvider = MoviesDataSource_Operations()
+            let array: [Int] = []
+            let crashPlease = array[1]
+//            moviesManager.moviesDataProvider = MoviesDataSource_Operations()
         }
     }
 }
