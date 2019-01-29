@@ -118,7 +118,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		3238EB424053DC01A384024E /* Pods_DADependencyInjection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DADependencyInjection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		77121EB21E5E5BFB00F125DD /* ListDisplayable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListDisplayable.swift; sourceTree = "<group>"; };
 		77121EB41E5E67C400F125DD /* ListDisplayableDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListDisplayableDataProvider.swift; sourceTree = "<group>"; };
 		77121EB61E5E741900F125DD /* NSURLNetworkConnector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSURLNetworkConnector.swift; sourceTree = "<group>"; };
@@ -175,8 +174,6 @@
 		77E0CF201EA7E7C600CA4B25 /* MoviesFactoryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesFactoryTests.swift; sourceTree = "<group>"; };
 		77E0CF221EA7E80B00CA4B25 /* TestFileNames.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestFileNames.swift; sourceTree = "<group>"; };
 		77E0CF241EA7FB5700CA4B25 /* MoviesManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesManagerTests.swift; sourceTree = "<group>"; };
-		9D2D2E774E3032D8BA0268DA /* Pods-DADependencyInjection.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DADependencyInjection.release.xcconfig"; path = "Pods/Target Support Files/Pods-DADependencyInjection/Pods-DADependencyInjection.release.xcconfig"; sourceTree = "<group>"; };
-		D416D0947A4A9B47D6930D8D /* Pods-DADependencyInjection.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DADependencyInjection.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DADependencyInjection/Pods-DADependencyInjection.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,15 +201,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6F3CDBCA4B83DF34C0FDD6AE /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				D416D0947A4A9B47D6930D8D /* Pods-DADependencyInjection.debug.xcconfig */,
-				9D2D2E774E3032D8BA0268DA /* Pods-DADependencyInjection.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		7745F1AE1EA7B23F0008A737 /* Data */ = {
 			isa = PBXGroup;
 			children = (
@@ -230,7 +218,6 @@
 				7757D24C1E5A627400C23217 /* DADependencyInjectionTests */,
 				77A3A0791ECD129A009363DC /* SiriTest */,
 				7757D2361E5A627400C23217 /* Products */,
-				6F3CDBCA4B83DF34C0FDD6AE /* Pods */,
 				F6FEC9CFBE08A01C4BECBBCA /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -399,7 +386,6 @@
 		F6FEC9CFBE08A01C4BECBBCA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3238EB424053DC01A384024E /* Pods_DADependencyInjection.framework */,
 				77A3A0821ECD129A009363DC /* IntentsUI.framework */,
 			);
 			name = Frameworks;
@@ -767,7 +753,6 @@
 		};
 		7757D2531E5A627400C23217 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D416D0947A4A9B47D6930D8D /* Pods-DADependencyInjection.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -783,7 +768,6 @@
 		};
 		7757D2541E5A627400C23217 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9D2D2E774E3032D8BA0268DA /* Pods-DADependencyInjection.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
