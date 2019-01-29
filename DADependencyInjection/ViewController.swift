@@ -9,8 +9,8 @@
 import UIKit
 import Intents
 
-private struct Constants {
-    static let CellIdentifier = "ListItemCell"
+private enum Constants: String {
+    case cellID = "ListItemCell"
 }
 
 class ViewController: UIViewController {
@@ -23,12 +23,15 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.tableView.refreshControl = UIRefreshControl()
-        self.tableView.refreshControl?.addTarget(self, action: #selector(ViewController.refreshControlAction), for: UIControlEvents.valueChanged)
+        self.setupRefreshControl()
+        self.requestSiriAuthorization()
         
         self.reloadData()
-        
-        self.requestSiriAuthorization()
+    }
+    
+    private func setupRefreshControl() {
+        self.tableView.refreshControl = UIRefreshControl()
+        self.tableView.refreshControl?.addTarget(self, action: #selector(ViewController.refreshControlAction), for: UIControlEvents.valueChanged)
     }
     
     private func requestSiriAuthorization() {
@@ -50,7 +53,7 @@ class ViewController: UIViewController {
         self.reloadData()
     }
     
-    func reloadData() {
+    private func reloadData() {
         self.tableView.refreshControl?.beginRefreshing()
         dataProvider.getListItems { (items) in
             self.tableView.refreshControl?.endRefreshing()
@@ -72,7 +75,7 @@ extension ViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: Constants.CellIdentifier)
+        let cell = tableView.dequeueReusableCell(withIdentifier: Constants.cellID.rawValue)
         
         if let cellItem = items?[indexPath.row] {
             cell?.textLabel?.text = cellItem.listItemTitle
