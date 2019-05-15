@@ -45,6 +45,8 @@ class ViewController: UIViewController {
                 print("notDetermined")
             case .restricted:
                 print("restricted")
+            @unknown default:
+                print("can't see into the future... yet")
             }
         }
     }
