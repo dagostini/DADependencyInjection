@@ -2,7 +2,6 @@ language: swift
 osx_image: xcode10.2
 install:
     - npm install -g danger
-    - swift build
 script:
     - swift run danger-swift ci
     - xcodebuild test -project DADependencyInjection.xcodeproj -scheme DADependencyInjection -destination 'platform=iOS Simulator,name=iPhone 8,OS=12.2'
