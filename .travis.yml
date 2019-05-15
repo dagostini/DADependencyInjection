@@ -1,9 +1,9 @@
 language: swift
 osx_image: xcode10.2
 install:
-    - npm install -g danger
+    - npm install -g danger/tap/danger-swift
 script:
-    - swift run danger-swift ci
+    - danger-swift ci
     - xcodebuild test -project DADependencyInjection.xcodeproj -scheme DADependencyInjection -destination 'platform=iOS Simulator,name=iPhone 8,OS=12.2'
 after_success:
     - bash <(curl -s https://codecov.io/bash)
