@@ -5,5 +5,6 @@ install:
 script:
     - danger-swift ci
     - xcodebuild test -project DADependencyInjection.xcodeproj -scheme DADependencyInjection -destination 'platform=iOS Simulator,name=iPhone 8,OS=12.2'
+    - yarn danger ci
 after_success:
     - bash <(curl -s https://codecov.io/bash)
