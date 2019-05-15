@@ -31,7 +31,7 @@ class ViewController: UIViewController {
     
     private func setupRefreshControl() {
         self.tableView.refreshControl = UIRefreshControl()
-        self.tableView.refreshControl?.addTarget(self, action: #selector(ViewController.refreshControlAction), for: UIControlEvents.valueChanged)
+        self.tableView.refreshControl?.addTarget(self, action: #selector(ViewController.refreshControlAction), for: UIControl.Event.valueChanged)
     }
     
     private func requestSiriAuthorization() {
@@ -49,7 +49,7 @@ class ViewController: UIViewController {
         }
     }
     
-    func refreshControlAction() {
+    @objc func refreshControlAction() {
         self.reloadData()
     }
     
@@ -96,10 +96,7 @@ extension ViewController {
             return
         }
         
-        if sender.selectedSegmentIndex == 0 {
-            moviesManager.moviesDataProvider = MoviesDataSource()
-            moviesManager.moviesDataProvider.networkingProvider = AFNetworkConnector()
-        } else if sender.selectedSegmentIndex == 1 {
+        if sender.selectedSegmentIndex == 1 {
             moviesManager.moviesDataProvider = MoviesDataSource()
             moviesManager.moviesDataProvider.networkingProvider = NSURLNetworkConnector()
         } else if sender.selectedSegmentIndex == 2 {

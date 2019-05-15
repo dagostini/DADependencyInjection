@@ -34,7 +34,7 @@ class MoviesDataSource: MoviesDataProvider {
     public var networkingProvider: NetworkingProvider
     public var moviesFactory: MoviesFactoryProvider
     
-    public init(withNetworkingProvider networking: NetworkingProvider = AFNetworkConnector(), andFactory factory: MoviesFactoryProvider = JSONMoviesFactory()) {
+    public init(withNetworkingProvider networking: NetworkingProvider = NSURLNetworkConnector(), andFactory factory: MoviesFactoryProvider = JSONMoviesFactory()) {
         self.networkingProvider = networking
         self.moviesFactory = factory
     }

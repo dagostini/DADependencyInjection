@@ -15,7 +15,7 @@ class GetDataOperation: DAOperation {
     
     var responseData: Data?
     
-    init(withURLString urlString: String, andNetworkingProvider provider: NetworkingProvider = AFNetworkConnector()) {
+    init(withURLString urlString: String, andNetworkingProvider provider: NetworkingProvider = NSURLNetworkConnector()) {
         self.urlString = urlString
         self.provider = provider
     }

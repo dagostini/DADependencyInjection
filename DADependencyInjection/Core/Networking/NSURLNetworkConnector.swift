@@ -13,7 +13,7 @@ class NSURLNetworkConnector: NetworkingProvider {
     func restCall(urlString: String, onCompleted: ((Data?) -> ())?) {
         
         guard
-            let url = try? urlString.asURL()
+            let url = URL(string: urlString)
             else {
                 onCompleted?(nil)
                 return

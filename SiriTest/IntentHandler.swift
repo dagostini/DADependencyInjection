@@ -25,7 +25,7 @@ class IntentHandler: INExtension, INSearchForPhotosIntentHandling {
         return self
     }
     
-    func handle(searchForPhotos intent: INSearchForPhotosIntent, completion: @escaping (INSearchForPhotosIntentResponse) -> Void) {
+    func handle(intent: INSearchForPhotosIntent, completion: @escaping (INSearchForPhotosIntentResponse) -> Void) {
         guard let searchTerm = intent.searchTerms?.first else {
             let response = INSearchForPhotosIntentResponse(code: .failure, userActivity: nil)
             completion(response)
