@@ -23,11 +23,6 @@ if !editedTravisFile.isEmpty {
     warn("Did you really mean to edit the travis.yml file?")
 }
 
-let editedMovieDataSourceFile = editedFiles.filter { $0.contains("MoviesDataSource.swift") }
-for file in editedMovieDataSourceFile where file.contains("APIParameterValue") {
-    fail("Please don't change the API key!")
-}
-
 if danger.github.pullRequest.user.login == "dagostini" {
     warn("Not this guy again!")
 }
