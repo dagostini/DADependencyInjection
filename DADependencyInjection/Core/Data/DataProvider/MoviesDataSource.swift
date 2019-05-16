@@ -39,7 +39,7 @@ class MoviesDataSource: MoviesDataProvider {
         self.moviesFactory = factory
     }
     
-    
+    // Just some random comment...
     func getMovies(onCompleted: (([MovieItem]) -> ())?) {
         
         var result: [MovieItem] = []
