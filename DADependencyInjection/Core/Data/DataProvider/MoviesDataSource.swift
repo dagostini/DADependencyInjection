@@ -12,7 +12,7 @@ struct DataSourceConstants {
     static let TMDBBaseURL = "https://api.themoviedb.org"
     static let MoviesURL = "/3/movie/popular"
     static let APIParameterKey = "api_key"
-    static let APIParameterValue = "_YOUR_API_KEY_HERE_"
+    static let APIParameterValue = "_YOUR_API_KEY_HERE_TEST"
     static let PageParameterKey = "page"
     
     static func URLString(forPage page: String = "1") -> String? {
@@ -34,12 +34,12 @@ class MoviesDataSource: MoviesDataProvider {
     public var networkingProvider: NetworkingProvider
     public var moviesFactory: MoviesFactoryProvider
     
-    public init(withNetworkingProvider networking: NetworkingProvider = AFNetworkConnector(), andFactory factory: MoviesFactoryProvider = JSONMoviesFactory()) {
+    public init(withNetworkingProvider networking: NetworkingProvider = NSURLNetworkConnector(), andFactory factory: MoviesFactoryProvider = JSONMoviesFactory()) {
         self.networkingProvider = networking
         self.moviesFactory = factory
     }
     
-    
+    // Just some random comment...
     func getMovies(onCompleted: (([MovieItem]) -> ())?) {
         
         var result: [MovieItem] = []

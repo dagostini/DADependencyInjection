@@ -42,7 +42,7 @@ class JSONMoviesFactory: MoviesFactoryProvider {
                 return []
         }
         
-        return arrayDict.flatMap { movieItem(withJSON: $0) }
+        return arrayDict.compactMap { movieItem(withJSON: $0) }
     }
 }
 
